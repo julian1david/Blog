@@ -1,3 +1,13 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C5C4C4;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --green: #80c8b7;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -6,11 +16,9 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: 'Roboto', sans-serif;
     min-width: 320px;
-    background-image: url('/assets//img/Cover-two.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
+    background: linear-gradient(to right, #434343, #212121);
 }
 html{
     font-size: 62.5%;
@@ -22,12 +30,11 @@ a {
 }
 header{
     width: 100%;
-    height: 16vh;
+    height: 18vh;
 }
 header .header__icons-container{
-    padding-top: 10px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: grid;
 }
 
@@ -35,11 +42,11 @@ header .header__icons-container .icons{
     width: 300px;
     height: auto;
     display: flex;
-    margin-right: 40px;
-    justify-self: end;
     align-items: center;
     justify-content: space-between;
     /* Con esto lo enviamos al final*/
+    justify-self: end;
+    margin-right: 50px;
 }
 header .icons span{
     color: #08fdd8;
@@ -47,21 +54,19 @@ header .icons span{
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100px;
+    height: 70px;
     align-items: center;
 }
 nav .nav__logo-container{
     margin-left: 50px;
 }
 nav .nav__logo-container img{
-    width: 110px;
-    height: 100px;
+    width: 220px;
 }
 .nav__profile-link{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 nav .nav__profile-link a{
     width: 100px;
@@ -76,43 +81,129 @@ nav .nav__profile-link a:hover{
     background-color: #08fdd8;
     color: black;
 }
-main .main__container{
-    width: 100%;
-    height: 84vh;
-    display: flex;
-    flex-direction: column;   
-    justify-content: center; 
-    align-items: flex-end;
-    
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 82vh;
+    background-image: url('../assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-main .main__container .main__container-title{
-    width: 460px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;    
+    margin-top: 80px;
 }
-main .main__container .main__container-title span{
-    font-size: 9rem;
+.home-main--text{
+    font-size: 4rem;
+    font-weight: 700px;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
 }
-.main_container-button{
-    padding-top: 40px;
-}
-.main_container-button button{
-    width: 360px;
-    height: auto;
-    background-color: #0d0b0e;
-    font-family: 'La Belle Aurore',cursive;
-    font-size: 3rem;
-    padding-top: 10px;
-    border: 1px solid #08fdd8;
-    color: white;
-    margin-right: 100px;
-    cursor: pointer;
-    
-}
-.main_container-button button:hover{
+.home-main-button{
+    width: 140px;
+    height: 50px;
     background-color: #08fdd8;
+    display: grid;
+    align-items: center;
+    border: 1px solid white;
+}
+.home-main-button a {
+    font-family: 'La Belle Aurore',cursive;
     color: black;
+    font-size: 2.4rem;
+    font-weight: 800px;
+}
+.home-main-button:hover{
+    background-color: transparent;
+    color: #08fdd8;
+}
+.blogs-main{
+    display: grid;
+}
+.blogs-news--container{
+    background-color: #dfe3e9;
+    padding: 0 120px 40px;
+}
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-news--container h3{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.blogs-news--img-container{
+    grid-column: 1;
+    margin: 0;
+}
+.blogs-news--img-container img{
+    width: 85%;
+}
+.blogs-news-info-container h2{
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.blogs-news-info-container p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+.blogs-button{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 1px solid var(--green);
+}
+
+.blogs-posts--containers h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.blogs-posts--containers{
+    padding: 0 120px 40px;
+}
+.blogs-posts-card{
+    display: inline-block;
+    max-width: 30%;
+    height: auto;
+    padding: 10px 10px 30px 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 8px;
+}
+.blogs-posts--containers .blogs-posts-card img{
+    width: 100%;
+}
+.blogs-posts--containers h2{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.blogs-posts--containers p{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    border-top: 40px solid var(--green);
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin-top: 30px;
 }
