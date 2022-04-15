@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 320px;
+    background-image: url('/assets//img/Cover-two.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+html{
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color:  black;
+}
+header{
+    width: 100%;
+    height: 16vh;
+}
+header .header__icons-container{
+    padding-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: grid;
+}
+
+header .header__icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    margin-right: 40px;
+    justify-self: end;
+    align-items: center;
+    justify-content: space-between;
+    /* Con esto lo enviamos al final*/
+}
+header .icons span{
+    color: #08fdd8;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    align-items: center;
+}
+nav .nav__logo-container{
+    margin-left: 50px;
+}
+nav .nav__logo-container img{
+    width: 110px;
+    height: 100px;
+}
+.nav__profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+nav .nav__profile-link a{
+    width: 100px;
+    padding: 0 8px;
+    font-family: 'La Belle Aurore',cursive;
+    font-size: 2rem;
+    color: #08fdd8;
+    text-align: center;
+    border: 1px solid #08fdd8;
+}
+nav .nav__profile-link a:hover{
+    background-color: #08fdd8;
+    color: black;
+}
+main .main__container{
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: flex-end;
+    
+}
+main .main__container .main__container-title{
+    width: 460px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+main .main__container .main__container-title span{
+    font-size: 9rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.main_container-button{
+    padding-top: 40px;
+}
+.main_container-button button{
+    width: 360px;
+    height: auto;
+    background-color: #0d0b0e;
+    font-family: 'La Belle Aurore',cursive;
+    font-size: 3rem;
+    padding-top: 10px;
+    border: 1px solid #08fdd8;
+    color: white;
+    margin-right: 100px;
+    cursor: pointer;
+    
+}
+.main_container-button button:hover{
+    background-color: #08fdd8;
+    color: black;
+}
