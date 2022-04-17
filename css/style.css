@@ -57,8 +57,8 @@ header .icons span{
 }
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     height: 70px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 nav .nav__logo-container{
@@ -73,12 +73,10 @@ nav .nav__logo-container img{
     margin-right: 50px;
 }
 nav .nav__profile-link a{
-    width: 100px;
-    padding: 0 8px;
-    font-family: 'La Belle Aurore',cursive;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    letter-spacing: 2px;
     color: #08fdd8;
-    text-align: center;
     border: 1px solid #08fdd8;
 }
 nav .nav__profile-link a:hover{
@@ -110,27 +108,27 @@ nav .nav__profile-link a:hover{
 .home-main-button{
     width: 140px;
     height: 50px;
-    background-color: #08fdd8;
-    display: grid;
-    align-items: center;
-    border: 1px solid white;
+    background-color: transparent;
+    border: 1px solid #08fdd8;
+    text-align: center;
 }
 .home-main-button a {
-    font-family: 'La Belle Aurore',cursive;
-    color: black;
-    font-size: 2.4rem;
-    font-weight: 800px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    color: #08fdd8;
 }
 .home-main-button:hover{
-    background-color: transparent;
-    color: #08fdd8;
+    box-shadow:0px 0px 10px 4px #08fdd8;
+    color: black;
 }
 .blogs-main{
     display: grid;
 }
 .blogs-news--container{
     background-color: #dfe3e9;
-    padding: 0 120px 40px;
+    padding: 0 50px 40px;
 }
 .blogs-main-new{
     display: grid;
@@ -167,7 +165,7 @@ nav .nav__profile-link a:hover{
     border: 1px solid var(--green);
 }
 .blogs-posts--container{
-    padding: 0 120px 40px;
+    padding: 0 50px 40px;
 }
 
 .blogs-posts--container h3{
@@ -182,7 +180,7 @@ nav .nav__profile-link a:hover{
     display: inline-block;
     max-width: 28%;
     height: auto;
-    margin-left: 20px;
+    margin-left: 16px;
     padding: 12px 12px 30px 12px;
     margin-bottom: 50px;
     background-color: white;
@@ -213,13 +211,13 @@ footer p{
     margin-top: 30px;
 }
 .blogpost-img-container{
-    padding: 0 80px 40px;
+    padding: 40px;
 }
 .blogpost-img-container img{
     width: 100%;
 }
 .blogpost-main-container {
-    padding: 0 120px 40px;
+    padding: 0 50px 40px;
 }
 .blogpost-main-container h3 {
     padding-bottom: 20px;
@@ -273,7 +271,7 @@ footer p{
 .profile-main-container{
     margin-top: 20px;
     margin-bottom: 50px;
-    padding: 70px 120px;
+    padding: 50px 50px;
     background-color: #e6e9ed;
 }
 .profile-main-container img{
@@ -299,7 +297,7 @@ footer p{
     letter-spacing: 2px;
 }
 .profile-main-proyects{
-    padding: 0 120px 40px;
+    padding: 0 50px 40px;
 }
 .profile-main-proyects h3{
     font-size: 2.4rem;
