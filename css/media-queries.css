@@ -25,7 +25,21 @@
         align-items: center;
     }
     .blogpost-img-container {
-        padding: 0 40px 40px;
+        padding: 40px 40px;
+    }
+    .profile-main-container{
+        padding: 50px 50px;
+    }
+    .profile-main-container{
+        text-align: center;
+    }
+    .profile-container p{
+        width: 100%;
+    }
+    .profile-main-container img {
+        width: 270px;
+        height: 260px;
+        margin-right: 0;
     }
 }
 @media (max-width: 640px){
@@ -39,7 +53,11 @@
         margin-right: 0px;
     }
     nav .nav__logo-container img{
-        width: 180px;
+        width: 90px;
+    }
+    nav .nav__profile-link{
+        justify-content: center;
+        margin-right: 0;
     }
     .blogs-posts--container .blogs-posts-card {
         max-width: 90%;
@@ -52,9 +70,8 @@
         grid-template-columns: 1fr;
         padding: 20px 0;
     }
-    .profile-main-container img {
-        width: 270px;
-        height: 260px;
-        margin-right: 0;
+    .profile-main-container{
+        padding: 20px 50px;
     }
+    
 }
