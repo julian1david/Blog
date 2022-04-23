@@ -6,9 +6,7 @@ Este es un proyecto usando HTML y CSS de un blog sore un poco de starwars
 
 Mira **[Star-wars-blog](https://julian1david.github.io/Star-Wars-Blog/)** para conocer como funciona el proyecto.
 
-
 ### Instalación 🔧
-
 
 ```
 git clone https://github.com/julian1david/Star-Wars-Blog.git
