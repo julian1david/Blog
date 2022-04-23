@@ -2,17 +2,13 @@
 
 Este es un proyecto usando HTML y CSS de un blog sore un poco de starwars
 
-## Comenzando 🚀
+## Vista del proyecto 🚀
 
-ünicamente para hacer uso de este proyecto clono y editalo es libre para todo el mundo 
+Mira **[Star-wars-blog](https://julian1david.github.io/Star-Wars-Blog/)** para conocer como funciona el proyecto.
+
 
 ### Instalación 🔧
 
-```
-Da un ejemplo
-```
-
-_Y repite_
 
 ```
 git clone https://github.com/julian1david/Star-Wars-Blog.git
@@ -23,14 +19,13 @@ git clone https://github.com/julian1david/Star-Wars-Blog.git
 * [HTML]
 * [CSS]
 
+## Contribuyendo 🖇️
+
+Cualquier contirbución al proyecto es bien recibida ! 
 
 ## Autor ✒️
 
+* **Julian F**  - [julian1f](https://github.com/julian1david)
 
-* **@Julianf**
-
-
-## Licencia 📄
-
-MIT
-
+---
+Hecho con ❤️ por [julian1f](https://github.com/julian1david) 😊
